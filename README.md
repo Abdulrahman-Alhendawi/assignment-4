@@ -27,4 +27,4 @@ This project used GitHub Copilot (GPT-4.1) in Visual Studio Code to assist with 
 
 🌐 **Live Site**: [https://abdulrahman-alhendawi.github.io/assignment-4/](https://abdulrahman-alhendawi.github.io/assignment-4/)
 
-*Note: The live deployment is hosted on GitHub Pages for easy access and demonstration.*
+_Note: The live deployment is hosted on GitHub Pages for easy access and demonstration._
