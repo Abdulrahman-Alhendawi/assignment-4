@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="headerElements">
+        <span class="hTags">Home</span>
+        <span class="hTags">About Me</span>
+        <span class="hTags"><a href="#Projects">Projects</a></span>
+        <span class="hTags"><a href="#contactMe">Contact</a></span>
+        <!-- Light/Dark Mode Toggle -->
+        <button id="theme-toggle" style="margin-left: 2em">🌙 Dark Mode</button>
+      </div>
+      <div id="headerLogos">
+        <span class="hTags"
+          ><a
+            href="https://www.linkedin.com/in/abdulrahman-alhendawi-056b83185/"
+            target="_blank"
+            ><img
+              class="logo"
+              src="assets/images/linkedin-logo.png"
+              alt="LinkedIn Logo" /></a
+        ></span>
+        <span class="hTags"
+          ><a target="_blank" href="https://github.com/Abdulrahman-Alhendawi"
+            ><img
+              id="github-logo"
+              class="logo"
+              src="assets/images/github-logo.png"
+              alt="Github Logo" /></a
+        ></span>
+      </div>
+    </div>
+    <div id="meContainer">
+      <div id="bio">
+        <!-- personalized time-based greeting -->
+        <div id="greeting" class="greeting" aria-live="polite"></div>
+        <div
+          id="personal-greeting"
+          style="margin: 0.5em 0; font-size: 1.2em"
+        ></div>
+        <h1>Abdulrahman Alhendawi</h1>
+        <p id="aboutMe">
+          I'm a first-honor Software Engineering student at
+          <span
+            ><a
+              style="color: #008540; text-decoration: none"
+              href="https://www.kfupm.edu.sa/"
+              >KFUPM</a
+            ></span
+          >
+          with a strong interest in Artificial Intelligence/Machine Learning and
+          Web-Development. I am passionate about building intuitive and
+          impactful software solutions, and I enjoy learning and working on
+          projects that combine innovation with real-world applications.
+        </p>
+        <!-- Weather and Quote Widgets -->
+        <div id="widgets">
+          <section id="weather-section" aria-live="polite">
+            <h2>Current Weather in Dhahran, Saudi Arabia</h2>
+            <div id="weather-info">Loading weather...</div>
+          </section>
+          <section id="quote-section" aria-live="polite">
+            <h2>Inspirational Quote</h2>
+            <div id="quote-info">Loading quote...</div>
+          </section>
+        </div>
+      </div>
+      <div>
+        <img
+          id="personalImage"
+          src="assets/images/Abdulrahman-Alhendawi.jpg"
+          alt="personalImage"
+        />
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 2em">
+      <button id="toggle-projects-btn">Hide Projects</button>
+    </div>
+    <h2 id="projectsHeader">Projects</h2>
+    <div id="Projects">
+      <div class="Project">
+        <img
+          src="assets/images/ElasticRegistrationProject-modified.png"
+          alt="ElasticRegistrationProject"
+        />
+        <h3>Elastic Registration Project</h3>
+        <p>
+          Researched elastic registration of CAD models in the X-ray domain to
+          advance NDT of 3D-printed components, applying computer vision and
+          neural networks for precise alignment, using Dragonfly for 3D
+          analysis, and optimizing algorithms to improve efficiency and
+          accuracy.
+        </p>
+      </div>
+      <div class="Project">
+        <img
+          src="images\Quadtree-Based Image Compression and Reconstruction.png"
+          alt="Quadtree-Based Image Compression and Reconstruction"
+        />
+        <h3>Quadtree-Based Image Compression and Reconstruction</h3>
+        <p>
+          Designed and implemented a quadtree-based algorithm in Java to
+          compress grayscale images, significantly reducing storage
+          requirements. This included developing recursive methods for efficient
+          reconstruction and building a file conversion tool to generate
+          quadtree representations compatible with visualization systems.
+        </p>
+      </div>
+    </div>
+    <section id="contactMe">
+      <h2>Contact Me</h2>
+      <h3>
+        Feel free to reach out to me. I’ll get back to you as soon as possible!
+      </h3>
+      <div id="form">
+        <form aria-label="Contact form">
+          <label for="name">Name</label><br />
+          <input id="name" type="text" placeholder="Muhammad Ali" /><br />
+          <label for="email">Email</label> <br />
+          <input
+            id="email"
+            type="email"
+            placeholder="s2022xxxxx@kfupm.edu.sa"
+          /><br />
+          <label for="confirm-email">Confirm Email</label> <br />
+          <input
+            id="confirm-email"
+            type="email"
+            placeholder="Re-enter your email"
+          /><br />
+          <label for="message">Message</label><br />
+          <textarea
+            id="message"
+            placeholder="I wanted to reach out about..."
+          ></textarea
+          ><br />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <!-- Timer/Counter: Time on site -->
+      <div id="timer-container" style="margin-top: 2em; text-align: center">
+        <span id="timer-label" style="font-weight: bold">Time on site:</span>
+        <span id="site-timer" aria-live="polite">0s</span>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
